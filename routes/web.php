@@ -46,3 +46,7 @@ Route::get('vertical/starter/blank-vertical', function () {
 Route::view('sessions/signIn', 'sessions.signIn')->name('signIn');
 Route::view('sessions/signUp', 'sessions.signUp')->name('signUp');
 Route::view('sessions/forgot', 'sessions.forgot')->name('forgot');
+
+// Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
